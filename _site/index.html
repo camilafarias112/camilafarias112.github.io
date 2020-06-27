@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="images/logo/tree1.png">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
+.mySlides {display: none}
 .bgimg {
   background-position: center;
   background-repeat: no-repeat;
@@ -20,6 +20,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </style>
 <body>
 
+
+  
 <!-- Sidebar with image -->
 <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
   <div class="bgimg"></div>
@@ -32,8 +34,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <div class="w3-bar-block w3-center">
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#session1" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Session 1</a>
     <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#research" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Recent Research</a>
+    <a href="#galery" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Galery</a>
+    <a href="#publications" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Publications</a>
+    <a href="#footer" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact and Links</a>
+
   </div>
 </nav>
 
@@ -49,33 +55,82 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>Immunology - Computational Biology - Data Science</p>
   </header>
 
-  <!-- Session1 -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="session1">
-    <h2>Session 1</h2>
-    <hr class="w3-opacity">
-    <p>blabalba blibli
-    </p>
-
-
-  <!-- About Section -->
+    <!-- About -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About Me!</h2>
     <hr class="w3-opacity">
-    <p>About me balablabalbiblbd
-    </p>
+     <p>Still got to add something about me!</p>
+  </div>
+
+  <!-- Recent Research -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="research">
+    <h2>Recent Research</h2>
+    <hr class="w3-opacity">
+    <p>Recent research here</p>
+  </div>
+
+  <!-- Galery -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="galery">
+    <h2>Galery</h2>
+    <hr class="w3-opacity">
+    <div class="w3-display-container mySlides">
+    <img src="images/photo/IMG_6160.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Presentation at the ASTMH 2019. At that time, we identified gene biomarkers for clinical outcome in cutaneous leishmaniasis</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="images/photo/IMG_6087.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Happy hour and dinner in Oxon Hill, MD at the ASTMH 2019 - @novaislab @christinakgo @pscottlab </p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/photo/IMG_0353.jpg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>The @pscottlab in early 2019! Philadelphia, PA</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img src="images/photo/IMG_7373.jpg" style="width:100%;margin-bottom:-6px">
+          <div class="w3-display-bottomleft w3-container w3-black">
+            <p>Dan and I at the #singlecellgenomicsday 2019, NY @hostmicrobe</p>
+          </div>
+        </div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/photo/IMG_6160.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/photo/IMG_6087.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/photo/IMG_0353.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/photo/IMG_7373.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+    </div>
+  </div>
 
     <!-- My image -->
-    <img src="/images/photo/me2020.png" class="w3-image w3-greyscale" style="width:25%;margin-left: auto;margin-right: auto; display: block">
-    <br>
+    <div class="w3-container w3-padding-64 w3-light-grey w3-opacity w3-center" id="publications">
+      <h2>Publications and Links</h2>
+      <hr class="w3-opacity">
+      <button class="w3-button w3-light-grey w3-padding-large w3-center">
+        <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-center">Google Scholar Profile</a>
+      </button>
+    </div>
 
+    <!-- Google Scholar -->
     <div class="w3-container w3-center">
-    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Google Scholar Profile</a>
-    </button></div>
-    <br><br> 
+      <hr class="w3-opacity">
+      <img src="/images/photo/me2020.png" class="w3-image w3-greyscale" style="width:25%;margin-left: auto;margin-right: auto; display: block">
+    </div>
+      <br>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px" id="footer">
     <a href="https://twitter.com/amorim_cfa"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <a href="https://github.com/camilafarias112"><i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/camila-farias-amorim-b91732148/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -86,7 +141,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End footer -->
   </footer>
   
-<!-- END PAGE CONTENT -->
+<!-- END PAGE CONTENT and JAVA -->
 </div>
 
 <script>
@@ -98,6 +153,36 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<script>
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
 }
 </script>
 
