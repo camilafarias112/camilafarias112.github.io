@@ -17,6 +17,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-image: url('/images/others/pelourinho.jpeg');
   min-height: 100%;
 }
+img {
+  float: left, right;
+}
 </style>
 <body>
 
@@ -49,26 +52,51 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Menu icon to open sidebar -->
   <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-  <!-- Header and photo -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Camila Farias Amorim</b></h1>
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:50px 16px" id="home">
+    <h2><b>Camila Farias Amorim</b></h2>
     <p>Immunology - Computational Biology - Data Science</p>
-    <img src="/images/photo/me2020.png" class="w3-image w3-greyscale" style="width:25%;margin-left: auto;margin-right: auto; display: block">
   </header>
 
-    <!-- About -->
+    <!-- About and photo -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About Me</h2>
     <hr class="w3-opacity">
-     <p>Still got to add something about me!</p>
+    <p><img src="/images/photo/me2020.png" class="w3-image" style="float:left;width:170px;height:200px;margin-right:15px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit..</p>
   </div>
 
   <!-- Recent Projects -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="projects">
     <h2>Recent Projects</h2>
     <hr class="w3-opacity">
-    <p>Recent research here</p>
+     <h6><p><b> 
+      Increased <i>Leishmania braziliensis</i> burden and T CD8+ cytotoxic transcriptional upregulation in the skin are biomarkers for treatment outcome in Cutaneous Leishmaniasis (start in 2017)
+     </p></b></h6>
+     <p><img src="/images/content/Amorim2019.001.jpeg" class="w3-image" style="float:left;width:280px;height:150px;margin-right:15px;margin-bottom:10px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit..
+     </p> 
+
+<br><br><br>    
+
+     <h6><p><b> 
+      The skin infection caused by <i>Leishmania braziliensis</i> drives an active Interferon-y systemic inflammation (start in 2019)
+     </p></b></h6>
+     <p><img src="/images/content/Amorim2021.png" class="w3-image" style="float:right;width:470px;height:170px;margin-left:15px;margin-bottom:10px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit..
+     </p> 
+
+
+
+
   </div>
+
+
+
+
+
+
+
 
   <!-- Galery -->
   <!--
@@ -120,20 +148,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="publications">
     <h2>Publications</h2>
     <hr class="w3-opacity">
-    <p>You can find a detailed list of the the publications that I was involved with in my
+    <p>A complete list of publications can be found in my
       <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>
-      or
-      <a href="https://www.ncbi.nlm.nih.gov/myncbi/1-W7f1ZFZlDA2B/bibliography/public/" target="_blank">my NCBI Bibliography Page</a>
       .</p>
   </div>
   <br><br>
 
   <!-- Links and Contact -->
   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px" id="footer">
-    <a href="https://twitter.com/amorim_cfa"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://github.com/camilafarias112"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/camila-farias-amorim-b91732148/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="mailto:amorimc@upenn.edu"><i class="fa fa-envelope-o"></i></a>
+    <p class="w3-medium"><b>Contact and Links</b></p>
+    <a href="https://twitter.com/amorim_cfa" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://github.com/camilafarias112" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/camila-farias-amorim-b91732148/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="mailto:camilafarias112@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
     <p class="w3-medium">Department of Pathobiology, School of Veterinary Medicine,  at University of Pennsylvania<br>
       380 S University Ave, Hill Pavilion room 346, Philadelphia, PA 19104.</p>
     <p class="w3-medium">© 2020. Camila Farias Amorim. All rights reserved.</p>
