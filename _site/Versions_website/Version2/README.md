@@ -1,1 +1,0 @@
-This repo contains the code for my [webpage](https://camilafarias112.github.io/).
