@@ -1,11 +1,8 @@
-# Folders:
-/resume
-/Versions_website
-/my_timeline
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+aboutme.txt
 
-# Specifc files:
-/images/content/qPCRLeishmania_new.pzfx
-/images/content/qPCRLeishmania_new.pzfx
-/images/content/keynote.key
-
-/images/logo/formattingLogos.pzfx
+/images/photo/others
