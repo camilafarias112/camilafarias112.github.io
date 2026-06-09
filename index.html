@@ -1,244 +1,485 @@
 <!DOCTYPE html>
-<html>
-<title>Camila Farias Amorim, MS., Ph.D</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=3">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="images/logo/heatmap.png">
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.mySlides {display: none}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('/images/others/pelourinho.jpeg');
-  min-height: 100%;
-}
-img {
-  float: left, right;
-}
-</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camila Farias Amorim, Ph.D. — Multi-omics Lead</title>
+  <meta name="description" content="Multi-omics Lead and Principal Scientist at Century Therapeutics. Single-cell genomics, multi-omics integration, biomarker discovery, and AI-augmented workflows in cell therapy.">
+  <link rel="shortcut icon" href="images/logo/heatmap.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js" defer></script>
+</head>
 <body>
 
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
-
- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
-    <a href="#currentrole" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Current role</a>
-    <a href="#keywords" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Keywords</a>
-    <a href="#publications" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Academic publications</a>
-    <a href="#cv" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">CV</a>
-    <a href="#footer" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Links and Contact</a>
+<!-- ======================================================
+     NAVIGATION
+     ====================================================== -->
+<nav>
+  <div class="container nav-inner">
+    <span class="nav-name">Camila Farias Amorim</span>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#what-i-do">What I Do</a></li>
+      <li><a href="#science">Science</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
 
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:20px 16px" id="home">
-    <h2><b>Camila Farias Amorim, Ph.D.</b></h2>
-    <p>Immunology - Clinical/Translational Medicine</p>
-    <p>Computational Biology - Bioinformatics</p>
-    <p>OMICS - Molecular Biology</p>
-  </header>
-
-    <!-- About and photo -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About Me</h2>
-    <hr class="w3-opacity">    
-    <p>Hello! Welcome to my website.</p>
-    <p>Computational Biology & Immunology PhD scientist specialized working in Omics, molecular profiling, and AI-enabled biomarker discovery to support allogeneic iPSC-derived cell therapies, spanning immune (CAR-T/CAR-NK) and non-immune (SC–derived pancreatic islet) programs for oncology and Type 1 Diabetes.  </p>
-    <p>Bringing 12+ years of experience across wet- and dry-lab settings, integrating cellular biology, immunopathogenesis, and high-dimensional genomics to enable mechanism-based biomarker discovery, ML predictive modeling, and translational decision-making across preclinical and early clinical development.</p>
-    <p>Incorporating AI-assisted analytics, including large language models (LLMs), to support workflow automation, reproducible analysis, scalable data exploration, and hypothesis generation in biomarker and target discovery.</p>
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Multi-omics Lead &nbsp;(Principal Scientist)</p>
+        <h1 class="playfair">Camila Farias Amorim, Ph.D.</h1>
+        <p class="hero-title">Century Therapeutics &nbsp;·&nbsp; Philadelphia, PA</p>
+        <p class="hero-statement">
+          Multi-omics computational biologist with experience spanning single-cell genomics, translational biomarker discovery, and AI-augmented analytical workflows — from study design through (pre)clinical readout.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://www.linkedin.com/in/camila-farias-amorim-ms-phd/" target="_blank" class="btn btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" target="_blank" class="btn btn-outline">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+            Google Scholar
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="images/photo/new_photo2026.PNG" alt="Camila Farias Amorim" class="hero-photo">
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- Current role -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="currentrole">
-    <h2>Current role</h2>
-    <hr class="w3-opacity">  
-    <p>Currently working on a Principal Scientist role at <a href="https://www.centurytx.com/" target="_blank">Century Therapeutics Inc.</a>,
-    <a href="https://www.linkedin.com/in/camila-farias-amorim-ms-phd/" target="_blank">LinkedIn</a></p>  
-    <p>Leading the NGS and molecular assay strategies across research, cell therapy manufacturing, and external stakeholder communication. Scope includes study design, assay development (qPCR, flow cytometry, CITE-seq, scRNA-seq, spatial transcriptomics), PK/PD and statistical modeling, and multi-omics data integration to inform product optimization and program strategy.</p>  
-    <p>Working horizontally across iPSC biology, immunology, differentiation, translational, manufacturing, and clinical teams, and oversees Omics-focused collaborations with CROs and technology vendors, ensuring experimental rigor, data quality, and cross-study comparability.</p>
-    <p>I lead company-wide Research Omics forums to align wet- and dry-lab teams and translate complex NGS datasets into actionable insights. Background includes biomarker and target discovery, predictive modeling, immunotherapies, vaccines, and early clinical biomarker strategy, with prior experience teaching NGS and bioinformatics at the University of Pennsylvania and 20+ peer-reviewed publications.</p>
-    <p>Focusing on connecting biological insight, quantitative analysis, and collaborative execution to support rigorous science and patient-relevant outcomes.</p>
 
-      <br><br>
-
-    <p>Avaliable materials:</p>
-    <p>1. Omics lead in: <i>iPSC-derived CD4+, CD8+ αβT cells that expand upon antigen stimulation and exhibit in vivo tumor control. 2025. </i><a href="https://www.centurytx.com/wp-content/uploads/Keystone-2025-alpha-beta-T-cells.pdf" target="_blank">Keystone poster</a></p>
-   
-     <br><br>
-
-    <p>#ComputationalBiology #BiomarkerDiscovery #PredictiveModeling #MolecularProfiling #LLMs #SingleCell #SpatialTranscriptomics #CellTherapy #iPSC #CAR_T #CAR_NK #SCIslets #TranslationalScience #Omics #NGS #CROManagement #DEI</p>
+<!-- ======================================================
+     ABOUT
+     ====================================================== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">About</p>
+        <h2 class="section-title">Scientist. Analyst.<br>Translational lead.</h2>
+        <p>I am a computational biologist currently serving as Multi-omics Lead (Principal Scientist) at <a href="https://www.centurytx.com/" target="_blank">Century Therapeutics</a>. I work at the intersection of high-dimensional genomics, translational biology, and data science — supporting iPSC-derived cell therapy programs for auto-immune (T1D) and oncology diseases (CAR-NK, CAR-αβT cell, and SC-islet) from early pre-clinical research through IND-enabling studies and into first-in-human trial support.</p>
+        <p>My work spans the full pre-clinical and translational continuum: in vitro and in vivo omics characterization of cell therapy products, in silico multi-omics integration for biomarker discovery and predictive modeling,  and manufacturing analytics for process development and lot release. On the early clinical side, I contribute to PK/PD biomarker strategy, translational pharmacology frameworks, and data packages that bridge pre-clinical findings to clinical success. I thrive in fast-paced, cross-functional biotech environments where scientific rigor, data analytics and operational execution are equally valued.</p>
+        <p>I integrate AI-based tools and agentic workflows into routine omics operations and data analysis — prioritizing reproducibility, automation, and decisions grounded in well-structured data.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9654;</span>
+          <div>
+            <strong>End-to-end omics program design</strong>
+            <span>Study architecture, technology selection, and analysis across single-cell RNA-seq, CITE-seq, spatial transcriptomics, bulk RNA-seq, and WGS — across multiple concurrent programs.</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9726;</span>
+          <div>
+            <strong>Cross-functional scientific leadership</strong>
+            <span>Bridging iPSC biology, immunology, manufacturing, and clinical teams. Founder and lead of a company-wide Research/Omics Forum (20+ scientists).</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <div>
+            <strong>AI-augmented workflows</strong>
+            <span>Active integration of LLMs and agentic tooling into omics operations, data pipelines, and logistics — with reproducibility and automation as core principles.</span>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9675;</span>
+          <div>
+            <strong>12+ years, bench to bioinformatics</strong>
+            <span>PhD in Immunology, 20+ peer-reviewed publications, postdoctoral research at the University of Pennsylvania, 5 years teaching NGS bioinformatics.</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- Keywords -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="keywords">
-    <h2>Keywords</h2>
-    <hr class="w3-opacity">    
-      high-throughput NGS; AI/LLMs; ML predictive modeling; R; python; C++; bash; Unix/Linux OS; command-line tools; shell scripting; read mapping; Illumina sequencing; DNA; RNA; RNAseq, Dual-RNAseq; single-cell RNAseq, CITE-Seq, 16S-seq, WGS, clinical metadata; Bioconductor; tidyverse; data visualization; linear modeling; machine learning; supervised/unsupervised classification; hierarchical clustering; dimensionality reduction; pattern recognition; git/GitHub; version control; cloud; ShinyApp; datasets; ggplot; statistical inference; pathway analysis; GSEA; GO; GEO NCBI
-   </div>   
 
-  <!-- Publications -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="publications">
-    <h2>Academic publications</h2>
-    <hr class="w3-opacity">
-    <p>A complete list of publications can be found in my
-      <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>
-      or more on <a href="https://www.webofscience.com/wos/author/record/2416090" target="_blank">Web of Science</a>. See below my main published projects:</p>
-      
-      <br><br>
+<!-- ======================================================
+     WHAT I DO
+     ====================================================== -->
+<section id="what-i-do">
+  <div class="container">
+    <p class="section-label">Scope</p>
+    <h2 class="section-title">What I do</h2>
+    <div class="cards-grid">
 
-      <h5><p><b> Variable gene expression and parasite load predict treatment outcome in cutaneous leishmaniasis</p></b></h5>
-       <p><img src="/images/content/Amorim2019.001.jpeg" class="w3-image" style="float:left;width:280px;height:150px;margin-right:15px;margin-bottom:10px;">
-        <i><u>Biological significance:</i></u> Most of the patients infected by <i>L. braziliensis</i> fail the therapy with an anti-parasitic drug, and there are no vaccines for this infection. 
-        I discovered that both parasite burden and the cytotoxic effector mechanism from skin CD8+ T cells/NK cells affect the response to therapy and can be used as an early biomarker at the clinic. 
-        The immunotherapy targeting this later inflammatory mechanism in experimental models dramatically impacted the control of the disease.</p>
-        
-        <p><i><u>Bioinformatics:</i></u> This was my first publication merging Immunology and Computational Biology. 
-        I investigated a human skin, lesional RNA-seq dataset from Brazilian cutaneous leishmaniasis patients and developed a workflow focused on genes with a highly variable expression between samples. 
-        In this study, R statistical programming language, dual-RNAseq mapping (quantifying both human and parasite reads from the samples), 
-        and a combination of strategies to reduce the dimensionality of the metadata were used to find these genetic biomarkers. All the code involved in reproducing the analysis and images is available in a 
-        <a href="https://doi-org.proxy.library.upenn.edu/10.24433/CO.5903311.v1" target="_blank">CodeOcean capsule</a>.</p>
-       <p><i>Farias Amorim et al. 2019, Science Translational Medicine, <a href="https://stm.sciencemag.org/content/11/519/eaax4204?rss=1" target="_blank">DOI: 10.1126/scitranslmed.aax4204</a></i></p>
-       <p><i>Code capsule: <a href="https://codeocean.com/capsule/6534016/tree/v1" target="_blank"> CodeOcean</a></i></p>
-       <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1126/scitranslmed.aax4204"></div>
+      <div class="card">
+        <span class="card-icon">&#10070;</span>
+        <h3>Single-Cell &amp; Multi-Omics Genomics</h3>
+        <p>Design and execute high-dimensional sequencing studies from sample collection through data deliverable. Technologies include scRNA-seq, CITE-seq, spatial transcriptomics, bulk RNA-seq, and whole-genome sequencing — applied across iPSC-derived cell therapy and SC-islet programs.</p>
+        <div class="pill-row">
+          <span class="pill">scRNA-seq</span>
+          <span class="pill">CITE-seq</span>
+          <span class="pill">Spatial transcriptomics</span>
+          <span class="pill">Bulk RNA-seq</span>
+          <span class="pill">WGS</span>
+        </div>
+      </div>
 
-       <br><br>
-       
-       <h5><p><b> Multi-omic profiling of cutaneous leishmaniasis infections reveals microbiota-driven mechanisms underlying disease severity</p></b></h5>
-       <p><img src="/images/content/Amorim2023.png" class="w3-image" style="float:left;width:730px;height:290px;margin-right:15px;margin-bottom:10px;">
-        <i><u>Biological significance:</i></u> The development of the lesion caused by the <i>Leishmania braziliensis</i> infection in humans is influenced by several factors. 
-        I collaborated with a big team of Brazilian clinicians and experimentalist bench scientists and analyzed a multi-omics dataset from those patients. 
-        We discovered that the skin microbiome strongly contributes to the severity of the disease, delayed healing, and unrevealed IL-1b as a major inflammatory mediator behind this association. 
-        This study's results support targeted immunotherapies and bacterial therapies for this parasitic infection.</p>
-        
-        <p><i><u>Bioinformatics:</i></u> I have reduced the dimensionality, integrated and analyzed a multi-omics dataset of L. braziliensis patients (skin RNA-seq, 16S-seq, bacterial WGS, qPCRs, and clinical metadata). 
-        I developed a computational workflow with the R programming language based on multivariate linear regression analysis and machine learning methods to identify elements contributing to the worse clinical outcome. 
-        <p><i>Farias Amorim et al. 2023, Science Translational Medicine, <a href="https://www.science.org/doi/10.1126/scitranslmed.adh1469" target="_blank">DOI: 10.1101/2023.02.02.23285247</a></i></p>
-       <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1126/scitranslmed.adh1469"></div>
-       
-       
-       <br><br>
+      <div class="card">
+        <span class="card-icon">&#9670;</span>
+        <h3>Computational Analysis &amp; Biomarker Discovery</h3>
+        <p>Multi-omics data integration, dimensionality reduction, differential expression, and supervised ML for clinical outcome prediction. I develop reproducible analytical pipelines and translate findings into actionable scientific and regulatory narratives.</p>
+        <div class="pill-row">
+          <span class="pill">R / Python</span>
+          <span class="pill">Seurat / Scanpy</span>
+          <span class="pill">DESeq2 / edgeR</span>
+          <span class="pill">ML modeling</span>
+          <span class="pill">GSEA / pathway analysis</span>
+        </div>
+      </div>
 
-       <h5><p><b> Localized skin inflammation during cutaneous leishmaniasis drives a chronic, systemic IFN-γ signature</p></b></h5>
-       <p><img src="/images/content/Amorim2021.png" class="w3-image" style="float:right;width:470px;height:170px;margin-left:15px;margin-bottom:10px;">
-        <i><u>Biological significance:</i></u> In this study, we were interested in evaluating whether the localized skin infection caused by the <i>Leishmania braziliensis</i> impacts patients' systemic immunity. 
-        We discovered a monocyte-Interferon-gamma and CD8+ T cells cytotoxic (CTL) transcriptional inflammation at the site of skin infection and systemically (lesion and peripheral blood RNA-seq analysis). 
-        Moreover, when we compared the blood from those patients with subjects with other diseases (tuberculosis and malaria), we identified the transcriptional CTL signature as a unique circulatory feature of this parasitic disease. 
-        We amplified our knowledge about this localized skin condition: cutaneous leishmaniasis. We raised the question of how these systemic responses might influence the response to other infections and the overall health of these individuals.
+      <div class="card">
+        <span class="card-icon">&#9654;</span>
+        <h3>Assay Translation &amp; Technology Development</h3>
+        <p>Translating NGS-derived biomarker findings into rapid, scalable molecular assay formats. This includes converting transcriptomic signatures into qPCR and ddPCR panels suitable for manufacturing QC, identity testing, and early clinical monitoring.</p>
+        <div class="pill-row">
+          <span class="pill">qPCR</span>
+          <span class="pill">ddPCR</span>
+          <span class="pill">NGS-to-assay translation</span>
+          <span class="pill">Assay development</span>
+        </div>
+      </div>
 
-       <p><i><u>Bioinformatics:</i></u> I used linear modeling, statistical inference, and data visualization strategies to profile the systemic transcriptome of patients with cutaneous leishmaniasis and revealed the gene expression patterns associated with clinical variables and outcomes. 
-        I also downloaded publicly available blood RNA-seq datasets from patients with other infections and compared their transcriptomes to identify disease-specific data patterns.</p>
-       
-       <p><i>Farias Amorim et al. 2021, PLoS NTDs, <a href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0009321" target="_blank">DOI: 10.1371/journal.pntd.0009321</a></i></p>
-       <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1371/journal.pntd.0009321"></div>
-       
-       <br><br>
+      <div class="card">
+        <span class="card-icon">&#9726;</span>
+        <h3>Program Operations &amp; Scientific Management</h3>
+        <p>Full budget ownership, CRO and technology vendor management, data submission and receipt workflows, and sample inventory coordination across multiple sites. Responsible for contract oversight and ensuring cross-site data comparability.</p>
+        <div class="pill-row">
+          <span class="pill">Budget ownership</span>
+          <span class="pill">CRO management</span>
+          <span class="pill">Study design</span>
+          <span class="pill">Cross-site coordination</span>
+        </div>
+      </div>
 
-       <h5><p><b> Teaching: An Open-Source Toolkit To Expand Bioinformatics Training in Infectious Diseases</p></b></h5>
-       <p><img src="/images/content/class.jpeg" class="w3-image" style="float:left;width:380px;height:270px;margin-right:15px;margin-bottom:0px;">
-        I was a Teaching Assistant in the <a href="http://diytranscriptomics.com" target="_blank">DIYtranscriptomics.com</a> course led by Dr. Beiting at the University of Pennsylvania.
-        As a short description (almost unfair), we teach how to work with transcriptomic data (bulk and single-cell RNA-seq): from installing the necessary tools to writing base/tidy R, using Bioconductor R packages, data modeling, and final next-generation sequencing interpretation of biological results.
-        We use examples of real-world datasets in the context of Infectious Diseases to introduce updated multi-omics concepts from the greater area of Computational Biology.
-        The course is fully available online, and our team put together a paper gathering everything we have learned in past years.</p>
+      <div class="card">
+        <span class="card-icon">&#9733;</span>
+        <h3>Scientific Leadership &amp; AI-Augmented Operations</h3>
+        <p>Managing "wet and dry-bench" professionals and facilitating cross-disciplinary alignment through a company-wide omics forum (20+ scientists). I use agentic coding environments to automate analytical pipelines, data logistics, and reporting workflows — reducing manual overhead and improving reproducibility across projects.</p>
+        <div class="pill-row">
+          <span class="pill">People management</span>
+          <span class="pill">Claude Code</span>
+          <span class="pill">Aider</span>
+          <span class="pill">Agentic coding</span>
+          <span class="pill">Pipeline automation</span>
+          <span class="pill">Reproducible research</span>
+        </div>
+      </div>
 
-       <p><i>Berry and Farias Amorim et al. 2021, mBio, <a href="https://journals.asm.org/doi/pdf/10.1128/mBio.01214-21" target="_blank">DOI: 10.1128/mBio.01214-21</a></i></p>
-       <p><i>Code capsule: <a href="https://codeocean.com/capsule/1031026/tree/v3" target="_blank"> CodeOcean</a></i></p>
-       <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/mBio.01214-21"></div>
-       
-       <br><br>
+    </div>
   </div>
+</section>
 
-  <!-- CV -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="cv">
-    <h2>Curriculum vitae</h2>
-    <hr class="w3-opacity">   
-    <p>My <a href="https://drive.google.com/file/d/1U4YFXJfu0llZlIxhPq-WzYo1w8PCRqig/view?usp=sharing" target="_blank">CV</a>. (last update: December 2023).</p> 
-    <p>TBD update...</p>
+
+<!-- ======================================================
+     TECHNICAL SKILLS STRIP
+     ====================================================== -->
+<section id="skills">
+  <div class="container">
+    <p class="section-label">Technical toolkit</p>
+    <h2 class="section-title">Skills &amp; technologies</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h4>Programming languages</h4>
+        <div class="pill-row">
+          <span class="pill">R</span>
+          <span class="pill">Python</span>
+          <span class="pill">Bash</span>
+          <span class="pill">C++</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Shell scripting</span>
+          <span class="pill">Unix/Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Single-cell &amp; genomics frameworks</h4>
+        <div class="pill-row">
+          <span class="pill">Seurat</span>
+          <span class="pill">Scanpy</span>
+          <span class="pill">Cell Ranger</span>
+          <span class="pill">Bioconductor</span>
+          <span class="pill">DESeq2</span>
+          <span class="pill">edgeR / limma</span>
+          <span class="pill">clusterProfiler</span>
+          <span class="pill">Harmony</span>
+          <span class="pill">Monocle3</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Data science &amp; visualization</h4>
+        <div class="pill-row">
+          <span class="pill">tidyverse</span>
+          <span class="pill">ggplot2</span>
+          <span class="pill">ComplexHeatmap</span>
+          <span class="pill">Shiny</span>
+          <span class="pill">R Markdown / Quarto</span>
+          <span class="pill">git / GitHub</span>
+          <span class="pill">Cloud computing / HPC</span>
+          <span class="pill">AWS / EC2 / S3buckets</span>
+          <span class="pill">GEO / NCBI deposition</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Omics technologies</h4>
+        <div class="pill-row">
+          <span class="pill">scRNA-seq</span>
+          <span class="pill">CITE-seq</span>
+          <span class="pill">Spatial transcriptomics</span>
+          <span class="pill">Bulk RNA-seq</span>
+          <span class="pill">Dual RNA-seq</span>
+          <span class="pill">WGS</span>
+          <span class="pill">16S rRNA-seq</span>
+          <span class="pill">Illumina sequencing</span>
+          <span class="pill">qPCR</span>
+          <span class="pill">ddPCR</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Analytical methods</h4>
+        <div class="pill-row">
+          <span class="pill">Multi-omics integration</span>
+          <span class="pill">Read mapping / alignment</span>
+          <span class="pill">Differential expression</span>
+          <span class="pill">GSEA / GO enrichment</span>
+          <span class="pill">Dimensionality reduction</span>
+          <span class="pill">Batch correction / integration</span>
+          <span class="pill">Hierarchical clustering</span>
+          <span class="pill">Supervised / unsupervised ML</span>
+          <span class="pill">Pattern recognition</span>
+          <span class="pill">Linear &amp; mixed-effects modeling</span>
+          <span class="pill">Statistical inference</span>
+          <span class="pill">Pseudotime / trajectory analysis</span>
+          <span class="pill">Cell type deconvolution</span>
+          <span class="pill">Biomarker discovery</span>
+          <span class="pill">Predictive modeling</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>AI &amp; automation</h4>
+        <div class="pill-row">
+          <span class="pill">Claude Code / Anthropic</span>
+          <span class="pill">Aider</span>
+          <span class="pill">LLMs</span>
+          <span class="pill">Agentic workflows</span>
+          <span class="pill">Nextflow / Snakemake</span>
+          <span class="pill">Docker / containerization</span>
+          <span class="pill">Pipeline automation</span>
+          <span class="pill">Reproducible research</span>
+        </div>
+      </div>
+
+    </div>
   </div>
+</section>
 
-  <!-- My picture -->  
-  <div class="w3-content w3-center w3-text-grey">
-    <hr class="w3-opacity">
-    <img src="/images/photo/pic2_copy.png" class="w3-image" style="float:center;width:200px;height:190px;">
+
+<!-- ======================================================
+     SELECTED SCIENCE
+     ====================================================== -->
+<section id="science">
+  <div class="container">
+    <p class="section-label">Research &amp; Science</p>
+    <h2 class="section-title">Selected science</h2>
+    <p class="science-intro">A selection of first-author publications demonstrating multi-omics data integration, ML-based clinical prediction, and translational biomarker discovery from complex human datasets.</p>
+
+    <p class="science-sublabel">Featured industry work</p>
+    <div class="pub pub--full">
+      <div>
+        <p class="pub-journal">Century Therapeutics &middot; Keystone Symposia 2025</p>
+        <h3><a href="https://www.centurytx.com/wp-content/uploads/Keystone-2025-alpha-beta-T-cells.pdf" target="_blank">iPSC-derived CD4+, CD8+ &#945;&#946;T cells that expand upon antigen stimulation and exhibit in vivo tumor control</a></h3>
+        <p class="pub-bridge">Omics lead for the translational characterization behind this program — single-cell and multi-omics profiling of iPSC-derived CAR-&#945;&#946;T cell products, from study design through analysis, supporting the demonstration of antigen-driven expansion and in vivo tumor control.</p>
+        <p class="pub-meta">Keystone 2025 poster &middot; <a href="https://www.centurytx.com/wp-content/uploads/Keystone-2025-alpha-beta-T-cells.pdf" target="_blank">View poster (PDF)</a></p>
+      </div>
+    </div>
+
+    <p class="science-sublabel">Selected publications</p>
+    <div class="pub-list">
+
+      <!-- Publication 1 — STM 2023 -->
+      <div class="pub">
+        <img src="images/content/Amorim2023.png" alt="Multi-omic profiling paper figure" class="pub-img">
+        <div>
+          <p class="pub-journal">Science Translational Medicine &middot; 2023</p>
+          <h3>Multi-omic profiling of cutaneous leishmaniasis infections reveals microbiota-driven mechanisms underlying disease severity</h3>
+          <p class="pub-bridge">Integrated analysis of host transcriptomics (RNA-seq), microbiome profiling (16S rRNA-seq, WGS), and clinical metadata from a single patient cohort, using multivariate linear regression and supervised ML to identify predictors of clinical outcome. This work reflects my approach to multi-modal omics integration: aligning heterogeneous data types, reducing dimensionality jointly, and extracting clinically meaningful structure under a unified statistical framework.</p>
+          <p class="pub-meta">Farias Amorim et al. 2023 &middot; <a href="https://www.science.org/doi/10.1126/scitranslmed.adh1469" target="_blank">DOI: 10.1126/scitranslmed.adh1469</a></p>
+          <div class="pub-links">
+            <div class="altmetric-embed" data-badge-type="donut" data-doi="10.1126/scitranslmed.adh1469"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 2 — STM 2019 -->
+      <div class="pub">
+        <img src="images/content/Amorim2019.001.jpeg" alt="Variable gene expression paper figure" class="pub-img">
+        <div>
+          <p class="pub-journal">Science Translational Medicine &middot; 2019</p>
+          <h3>Variable gene expression and parasite load predict treatment outcome in cutaneous leishmaniasis</h3>
+          <p class="pub-bridge">Dual RNA-seq profiling of human skin lesions — simultaneously mapping host transcriptome and pathogen burden — combined with variable gene expression analysis and dimensionality reduction to build a predictive model of treatment response. This was my first publication integrating computational and immunological approaches to clinical biomarker discovery, and it established the analytical framework I continue to refine.</p>
+          <p class="pub-meta">Farias Amorim et al. 2019 &middot; <a href="https://stm.sciencemag.org/content/11/519/eaax4204" target="_blank">DOI: 10.1126/scitranslmed.aax4204</a> &middot; <a href="https://codeocean.com/capsule/6534016/tree/v1" target="_blank">Code (CodeOcean)</a></p>
+          <div class="pub-links">
+            <div class="altmetric-embed" data-badge-type="donut" data-doi="10.1126/scitranslmed.aax4204"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 3 — PLoS NTDs 2021 -->
+      <div class="pub">
+        <img src="images/content/Amorim2021.png" alt="Systemic IFN-gamma signature paper figure" class="pub-img">
+        <div>
+          <p class="pub-journal">PLoS Neglected Tropical Diseases &middot; 2021</p>
+          <h3>Localized skin inflammation during cutaneous leishmaniasis drives a chronic, systemic IFN-&#947; signature</h3>
+          <p class="pub-bridge">Parallel RNA-seq profiling of tissue (skin lesion) and peripheral blood, coupled with cross-cohort comparison against publicly available disease transcriptomes. The analysis combined linear modeling, statistical inference, and data visualization to isolate disease-specific transcriptional signatures — a cross-tissue, multi-context approach to understanding systemic immune responses.</p>
+          <p class="pub-meta">Farias Amorim et al. 2021 &middot; <a href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0009321" target="_blank">DOI: 10.1371/journal.pntd.0009321</a></p>
+          <div class="pub-links">
+            <div class="altmetric-embed" data-badge-type="donut" data-doi="10.1371/journal.pntd.0009321"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="science-footer">
+      Full publication list on <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp;&middot;&nbsp;
+      Also on <a href="https://www.webofscience.com/wos/author/record/2416090" target="_blank">Web of Science</a>
+    </p>
   </div>
-  <br><br>
+</section>
 
-  <!-- Links and Contact -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px" id="footer">
-    <p class="w3-medium"><b>Contact and Links</b></p>
-    <a href="https://twitter.com/amorim_cfa" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://github.com/camilafarias112" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/camila-farias-amorim-ms-phd/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="mailto:camilafarias112@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
-    <p class="w3-medium">Philadelphia, PA, USA</p>
-    <p class="w3-medium">© 2026. Camila Farias Amorim. All rights reserved.</p>
-    <p class="w3-medium">Using :: <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT and JAVA -->
+
+<!-- ======================================================
+     BACKGROUND
+     ====================================================== -->
+<section id="background">
+  <div class="container">
+    <p class="section-label">Background</p>
+    <h2 class="section-title">Career timeline</h2>
+    <div class="bg-grid">
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-year">2024 – present</p>
+          <h3>Multi-omics Lead &nbsp;(Principal Scientist)</h3>
+          <p>Century Therapeutics &middot; Philadelphia, PA<br>Leading the omics program across iPSC-derived CAR-NK, CAR-&#945;&#946;T cell, and SC-islet programs, with responsibility for study design, computational analysis, assay development, and cross-functional coordination.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2017 – 2024</p>
+          <h3>Postdoctoral Researcher &rarr; Research Associate</h3>
+          <p><a href="https://hostmicrobe.org" target="_blank">Beiting Lab</a> &amp; <a href="https://www.vet.upenn.edu/directory/phillipscott/" target="_blank">Scott Lab</a> &middot; University of Pennsylvania<br>Multi-omics of infectious disease immunopathology; 5 years as Teaching Assistant for NGS &amp; bioinformatics (<a href="https://diytranscriptomics.com" target="_blank">DIYtranscriptomics.com</a>).</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2011 – 2017</p>
+          <h3>Masters &amp; Ph.D. in Immunology</h3>
+          <p>Federal University of Bahia, Brazil<br>Immunopathogenesis of cutaneous leishmaniasis; clinical cohort design and translational immunology research.</p>
+        </div>
+      </div>
+
+      <div class="awards-block">
+        <h4>Recognition &amp; credentials</h4>
+        <div class="award-item"><span>AAI Oral Presentation Award — 1st place</span></div>
+        <div class="award-item"><span>ASTMH Scientific Excellence Award</span></div>
+        <div class="award-item"><span>NIH travel awards (multiple)</span></div>
+        <div class="award-item"><span>20+ peer-reviewed publications (<em>Science Translational Medicine</em>, <em>JEM</em>, <em>PLoS Pathogens</em>)</span></div>
+        <div class="award-item"><span>5 years teaching NGS/bioinformatics at University of Pennsylvania — co-author on <a href="https://journals.asm.org/doi/pdf/10.1128/mBio.01214-21" target="_blank">open-source bioinformatics curriculum</a> (mBio, 2021)</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     PELOURINHO DIVIDER
+     ====================================================== -->
+<div class="pelourinho-band">
+  <div class="pelourinho-text">
+    <p>Philadelphia, PA &nbsp;&middot;&nbsp; originally from Salvador, Bahia, Brazil</p>
+  </div>
 </div>
 
+
+<!-- ======================================================
+     CONTACT
+     ====================================================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <p class="section-label">Contact</p>
+      <h2>Get in touch</h2>
+      <p>Open to scientific conversations and collaborations.</p>
+
+      <div class="contact-links">
+        <a href="https://scholar.google.com/citations?user=6jg00_wAAAAJ&hl=en" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+          Google Scholar
+        </a>
+        <a href="https://github.com/camilafarias112" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/camila-farias-amorim-ms-phd/" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:camilafarias112@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+
+      <!-- UPDATE: uncomment and replace href with your Google Drive CV link when ready -->
+      <!--
+      <p>
+        <a href="YOUR_GOOGLE_DRIVE_CV_URL" target="_blank" class="cv-link">
+          &#8681; Download CV (PDF)
+        </a>
+      </p>
+      -->
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Camila Farias Amorim &nbsp;&middot;&nbsp; Philadelphia, PA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-<script>
-// Slideshow Apartment Images
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
 </script>
 
 </body>

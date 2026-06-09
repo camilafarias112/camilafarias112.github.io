@@ -1,7 +1,15 @@
-.sass-cache
-.jekyll-cache
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
-aboutme.txt
+vendor/
 
-/images/photo/others
+# macOS
+.DS_Store
+
+# Local archive of unused/old assets
+_archive/
+
+# Local editor / agent config
+.claude/
